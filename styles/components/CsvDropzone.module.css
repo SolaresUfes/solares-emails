@@ -1,0 +1,14 @@
+.container {
+    background-color: #73a2bd;
+    width: 25rem;
+    height: 10rem;
+    border-radius: 20px;
+    padding: 10px;
+    transition: 0.2s;
+    font-size: 20px;
+    margin: 1rem;
+  }
+  
+  .container:hover {
+    background-color: #4f8abd;
+  }

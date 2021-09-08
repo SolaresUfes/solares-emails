@@ -1,0 +1,74 @@
+.container {
+    width: 100%;
+    height:6rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #041933;
+    color: #FFFFFF;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.container h1:hover {
+    cursor: pointer;
+}
+
+.login {
+    height: 100%;
+    padding: 7px;
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-end; 
+    justify-content: space-around;
+    color: var(--white);
+}
+
+.login h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.login img {
+    margin-right: 10px;
+}
+
+.login p {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 55px;
+}
+
+.loginProfile{
+    height: 30%;
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+}
+
+.sair:hover {
+    transition: 0.2s;
+    cursor: pointer;
+    color: #e74949;
+}
+
+.logout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.logout p {
+    margin-right: 7px;
+}
+
+.logout:hover{
+    cursor: pointer;
+}

@@ -1,0 +1,28 @@
+{
+  "name": "site_envio_email",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "11.1.2",
+    "next-auth": "^3.29.0",
+    "nodemailer": "^6.6.3",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-icons": "^4.2.0",
+    "react-json-viewer": "^1.7.1",
+    "react-lottie": "^1.2.3",
+    "react-papaparse": "^3.17.1",
+    "sass": "^1.39.0",
+    "sweetalert2": "^11.1.5"
+  },
+  "devDependencies": {
+    "eslint": "7.32.0",
+    "eslint-config-next": "11.1.2"
+  }
+}
