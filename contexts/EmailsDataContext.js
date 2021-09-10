@@ -82,8 +82,8 @@ export function EmailsDataProvider({ children }) {
         }).then((res) => {
             console.log('Response received')
             if (res.status === 200) {
-                console.log(res.json());
-                console.log('Response succeeded!')
+                // console.log(res.json());
+                // console.log('Response succeeded!')
                 setCsvData([]);
                 setBody('');
                 setSubject('');

@@ -54,7 +54,7 @@ export default function Home() {
                                     onChange={(e) => setSubject(e.target.value)}
                                 />
                                 <textarea 
-                                    placeholder="Corpo da mensagem. Use #@nomedocampo# para persornalizar cada email com os campos do CSV." 
+                                    placeholder="Corpo da mensagem. Use ~@nomedocampo~ para persornalizar cada email com os campos do CSV." 
                                     value={body}
                                     onChange={(e) => setBody(e.target.value)}
                                 />

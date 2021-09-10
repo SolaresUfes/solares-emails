@@ -34,7 +34,7 @@ export default async (req, res) => {
   async function sendEmail(info) {
     // console.log(req.body.html);
 
-    let bodyText = req.body.body.split('#');
+    let bodyText = req.body.body.split('~');
     bodyText = bodyText.map(item => {
       if (item[0] === '@') {
         let variavel = item.substr(1);
@@ -81,9 +81,12 @@ export default async (req, res) => {
   const promises = req.body.list.map((element, i) =>
     new Promise(resolve =>
       setTimeout(() => {
-        console.log((i + 1) + ' - ' + element.nome);
-        sendEmail(element);
-        resolve();
+        // console.log((i + 1) + ' - ' + element.nome);
+        if(element.email){
+          sendEmail(element);
+          resolve();
+        }
+        
       }, 1000 * i)
     )
   )
