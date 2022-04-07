@@ -1,19 +1,12 @@
 const nodemailer = require('nodemailer');
 
 export default async (req, res) => {
-
   // cria um objeto de transporte para o envio de e-mails
   const transporter = nodemailer.createTransport({
-    host: 'smtp.gmail.com',
-    port: 465,
-    secure: true,
+    service: 'gmail',
     auth: {
-      type: 'OAuth2',
-      user: req.body.auth.email,
-      clientId: process.env.GOOGLE_ID,
-      clientSecret: process.env.GOOGLE_SECRET,
-      refreshToken: process.env.GOOGLE_REFRESH_TOKEN,
-      accessToken: process.env.GOOGLE_ACCESS_TOKEN,
+      user: process.env.EMAIL,
+      pass: process.env.PASSWORD
     }
   });
 
